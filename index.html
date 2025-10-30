@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
         <meta charset="UTF-8">
@@ -15,50 +15,328 @@
 
 <body>
         <nav>
-                <menu>
-
-                </menu>
-                <div class="links">
-
+                <div class="top-bar">
+                        <menu>
+                                <a href="#"><i data-lucide="menu" class="icon"></i></a>
+                                <p>Replica do Notion para Desenvolvimento Web</p>
+                        </menu>
+                        <div class="links">
+                                <a target="_blank" href="https://github.com/Fsp30">Meu Github</a>
+                                <a target="_blank"
+                                        href="https://www.amazon.com.br/Arquitetura-Software-Trade-off-Arquiteturas-Distribu%C3%ADdas/dp/8550819840">Meu
+                                        livro favorito</a>
+                                <a target="_blank" href="other.html">Minha outra página</a>
+                        </div>
                 </div>
         </nav>
         <header>
+                <div class="image-header">
+                        <img src="images/Design sem nome (1).png" alt="Tela de codigo de autenticação">
+                </div>
         </header>
 
         <main>
                 <h3>Notion do Filipe</h3>
-                <div class="recent-anotations">
+
+                <section class="recent-anotations">
                         <div class="title">
-                                Suas Anotações recentes
+                                <h4>Suas Anotações recentes</h4>
                         </div>
-                        <aside>
-                                <div class="litle-reminder">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-                                                reprehenderit placeat repudiandae consectetur temporibus corporis
-                                                voluptas in voluptatibus nihil recusandae minima mollitia voluptates
-                                                laudantium earum pariatur inventore debitis, fugiat repellat?</p>
+
+                        <div class="anotations-layout">
+                                <aside class="litle-reminder">
+                                        <p>fazer anotações de clean code no max até o fim de semanda</p>
+                                </aside>
+
+                                <div class="recent-cards-container" id="recent-cards-container">
+                                        <div class="recent-cards">Mercado <i data-lucide="file"></i></div>
+                                        <div class="recent-cards">Documentação tailwind <i data-lucide="file"></i></div>
+                                        <div class="recent-cards">Tasks entregas <i data-lucide="file"></i></div>
+                                        <div class="recent-cards">Projeto sem nome <i data-lucide="file"></i></div>
                                 </div>
-                        </aside>
-                        <div class="recent-cards"></div>
-                        <div class="recent-cards"></div>
-                        <div class="recent-cards"></div>
-                        <div class="recent-cards"></div>
-                </div>
-                <div class="content">
+                        </div>
+                </section>
+
+                <section class="content">
                         <h4>Notas</h4>
-                        <div class="all-notes">
+
+                        <div class="scroll-wrapper">
+                                <div class="scroll-wrapper">
+                                        <div class="all-notes" id="notes-container">
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>TDD</h4>
+                                                                <p>Test Driven Development</p>
+                                                        </div>
+                                                        <i>📝</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>DDD</h4>
+                                                                <p>Domain Driven Design</p>
+                                                        </div>
+                                                        <i>🏗️</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>Clean Arch</h4>
+                                                                <p>Clean Architecture</p>
+                                                        </div>
+                                                        <i>🧹</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>Hexagonal</h4>
+                                                                <p>Ports & Adapters</p>
+                                                        </div>
+                                                        <i>⚡</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>Microservices</h4>
+                                                                <p>Distributed Systems</p>
+                                                        </div>
+                                                        <i>🔗</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>SQL</h4>
+                                                                <p>Structured Query Language</p>
+                                                        </div>
+                                                        <i>🗃️</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>NoSQL</h4>
+                                                                <p>Non-relational Databases</p>
+                                                        </div>
+                                                        <i>📊</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>API REST</h4>
+                                                                <p>RESTful APIs</p>
+                                                        </div>
+                                                        <i>🌐</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>GraphQL</h4>
+                                                                <p>Query Language</p>
+                                                        </div>
+                                                        <i>📈</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>Docker</h4>
+                                                                <p>Containerization</p>
+                                                        </div>
+                                                        <i>🐳</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>Kubernetes</h4>
+                                                                <p>Container Orchestration</p>
+                                                        </div>
+                                                        <i>⚓</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>CI/CD</h4>
+                                                                <p>Continuous Integration</p>
+                                                        </div>
+                                                        <i>🔄</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>Agile</h4>
+                                                                <p>Agile Methodology</p>
+                                                        </div>
+                                                        <i>🏃</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>Scrum</h4>
+                                                                <p>Framework Agile</p>
+                                                        </div>
+                                                        <i>📋</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>DevOps</h4>
+                                                                <p>Development & Operations</p>
+                                                        </div>
+                                                        <i>🤖</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>Git</h4>
+                                                                <p>Version Control</p>
+                                                        </div>
+                                                        <i>📚</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>OOP</h4>
+                                                                <p>Object Oriented Programming</p>
+                                                        </div>
+                                                        <i>🧩</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>FP</h4>
+                                                                <p>Functional Programming</p>
+                                                        </div>
+                                                        <i>📐</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>MVC</h4>
+                                                                <p>Model View Controller</p>
+                                                        </div>
+                                                        <i>🎛️</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>MVVM</h4>
+                                                                <p>Model View ViewModel</p>
+                                                        </div>
+                                                        <i>📱</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>SOLID</h4>
+                                                                <p>Principles OOP</p>
+                                                        </div>
+                                                        <i>⭐</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>API Gateway</h4>
+                                                                <p>Microservices Pattern</p>
+                                                        </div>
+                                                        <i>🚪</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>Message Queue</h4>
+                                                                <p>Async Communication</p>
+                                                        </div>
+                                                        <i>📨</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>Event Sourcing</h4>
+                                                                <p>Event-driven Architecture</p>
+                                                        </div>
+                                                        <i>🎫</i>
+                                                </div>
+                                                <div class="note-card">
+                                                        <div>
+                                                                <h4>CQRS</h4>
+                                                                <p>Command Query Responsibility</p>
+                                                        </div>
+                                                        <i>⚖️</i>
+                                                </div>
+                                        </div>
+                                </div>
+
 
                         </div>
-                        <div class="create-note"></div>
-                </div>
-        </main>
+                </section>
 
+                <div class="create-note">
+                        <form id="create-note-form">
+                                <input type="text" id="note-title" placeholder="Título da nota" required>
+                                <textarea name="note" id="note-content" placeholder="Conteúdo da nota..."
+                                        required></textarea>
+                                <button type="submit">Criar Nota</button>
+                        </form>
+                </div>
+
+        </main>
         <footer>Filipe de Paula - Copyright@2025</footer>
 </body>
+
+
 <script src="https://unpkg.com/lucide@latest"></script>
 <script>
-  lucide.createIcons();
-</script>
+        lucide.createIcons();
 
+        document.addEventListener('DOMContentLoaded', function () {
+                const container = document.getElementById('notes-container');
+                const originalContent = container.innerHTML;
+                container.innerHTML += originalContent;
+
+                function createNewNote(title, content) {
+                        const noteCard = document.createElement('div');
+                        noteCard.className = 'recent-cards';
+                        noteCard.innerHTML = `${title}<i data-lucide="file"></i>`;
+
+                        noteCard.addEventListener('click', function () {
+                                alert(`Título: ${title}\nConteúdo: ${content}`);
+                        });
+
+                        return noteCard;
+                }
+
+                function addNoteToRecentCards(title, content) {
+                        const recentContainer = document.getElementById('recent-cards-container');
+                        const newNote = createNewNote(title, content);
+
+                        recentContainer.insertBefore(newNote, recentContainer.firstChild);
+                        lucide.createIcons();
+
+                        if (recentContainer.children.length > 8) {
+                                recentContainer.removeChild(recentContainer.lastChild);
+                        }
+                }
+
+                function addNoteToMainList(title, content) {
+                        const notesContainer = document.getElementById('notes-container');
+                        const newNoteCard = document.createElement('div');
+                        newNoteCard.className = 'note-card';
+
+                        newNoteCard.innerHTML = `
+                <div>
+                    <h4>${title}</h4>
+                    <p>${content.substring(0, 50)}${content.length > 50 ? '...' : ''}</p>
+                </div>
+                <i>📄</i>`;
+
+                        newNoteCard.addEventListener('click', function () {
+                                alert(`Título: ${title}\nConteúdo: ${content}`);
+                        });
+
+                        notesContainer.appendChild(newNoteCard);
+                }
+
+                const form = document.getElementById('create-note-form');
+                form.addEventListener('submit', function (e) {
+                        e.preventDefault();
+
+                        const title = document.getElementById('note-title').value;
+                        const content = document.getElementById('note-content').value;
+
+                        if (title.trim() && content.trim()) {
+
+                                addNoteToRecentCards(title, content);
+
+                                addNoteToMainList(title, content)
+                                form.reset();
+
+                                alert('Nota criada com sucesso!');
+                        } else {
+                                alert('Por favor, preencha título e conteúdo.');
+                        }
+                });
+
+                window.createNote = function (title, content) {
+                        addNoteToRecentCards(title, content);
+                        addNoteToMainList(title, content);
+                };
+
+        });
+</script>
 
 </html>
